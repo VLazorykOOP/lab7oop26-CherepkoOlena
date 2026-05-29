@@ -13,7 +13,7 @@ template<typename t> void swap(t* arr, int n) {
     int minID = -1;
 
     for (int i = 0; i < n; ++i) {
-        char val = arr[i];
+        t val = arr[i];
         if ((maxID == -1 || minID == -1) && val > max) {
             max = val;
             maxID = i;
